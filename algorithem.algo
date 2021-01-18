@@ -1,0 +1,24 @@
+ALGORITHM phrase
+VAR
+    numberofchracter:INTEGER:=0;
+    numberofwords:INTEGER:=0;
+    numberofvowels:INTEGER:=0;
+    c:CHAR:="";
+    
+
+BEGIN
+    WHILE (c<>'.') DO
+        read (c)
+        numberofchracter:=numberofchracter+1
+        if (c=" ")then 
+        numberofwords:=numberofwords+1
+        if (c="a" or c="o" or c="e" or c="i" or c="u" or c="y")then
+        numberofvowels:=numberofvowels+1
+
+        
+    END_WHILE
+    write (numberofchracter)
+    write(numberofwords)
+    write(numberofvowels)
+    
+END
